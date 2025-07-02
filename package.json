@@ -5,29 +5,34 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "npx nodemon --exec \"node --experimental-strip-types\" src/index.ts",
+    "dev": "npx nodemon --exec \"node --import=tsx \" src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
+
+    "install": "node --import=tsx src/install/commands.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "discord-interactions": "^4.3.0",
+    "dotenv": "^17.0.1",
     "express": "^5.1.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.10",
+    "discord-api-types": "^0.38.14",
     "nodemon": "^3.1.10",
+    "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   },
-    "repository": {
+  "repository": {
     "type": "git",
-    "url": "git+https://github.com/Quetzacoalt91/dvbrouter.git"
+    "url": "git+https://github.com/Quetzacoalt91/discord-app-la-commere.git"
   },
   "author": "Quetzacoalt91",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Quetzacoalt91/dvbrouter/issues"
+    "url": "https://github.com/Quetzacoalt91/discord-app-la-commere/issues"
   },
-  "homepage": "https://github.com/Quetzacoalt91/dvbrouter#readme"
+  "homepage": "https://github.com/Quetzacoalt91/discord-app-la-commere#readme"
 }
